@@ -37,6 +37,9 @@
     ]
   },
   "jest": {
+    "moduleNameMapper": {
+      "swiper/react": "swiper/swiper-react.mjs"
+    },
     "transformIgnorePatterns": [
       "node_modules/(?!swiper)"
     ]
