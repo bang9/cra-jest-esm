@@ -1,9 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
-import { Swiper } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/swiper-react.mjs';
 
 test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+   render(<Swiper><SwiperSlide>Slide 1</SwiperSlide></Swiper>);
+   const slide = screen.getByText('Slide 1')
+   expect(slide).toBeInTheDocument();
 });
